@@ -1,0 +1,28 @@
+Command line basics
+
+Open your CLI (Terminal for Mac, Git Bash for windows)
+Use the cd command to navigate to your desktop directory (everyone’s will be a little different so I can’t say exactly how to get there). You will most likely need to use a mix of ls and cd.Use ls to list out the contents of the current directory you're in so you can see where you can cd into.
+If you are on Windows you might have to go into your OneDrive first to find your desktop.
+Once you make it to your desktop in the command line, use pwd to verify that you are there. It could look something like user/username/desktop the last directory in the path is the current directory you are in.
+Close your command line and open it again. Repeat steps 1-3. Repetition is important.
+Can you do it even faster?
+Now that you are in your desktop directory on the command line, make a new directory called cli_practice. You should actually see the folder on your desktop now.
+mkdir cli_practice is the command you will use
+Run the command ls and you should also see on the command line that the directory has been created.
+Now, move into the new directory you just created and check your current working directory.
+Now create two directories with one command. One directory should be called super_visible_directory and the other should be called .super_secret_directory . Make sure to keep the period in front of the .super_secret_directory , it’s not a typo. 
+Now if you open the folder using either Finder or Explorer on your computer, you will see the super_visible_directory but not the other.
+In the command line run the command ls and you will still only see the super_visible_directory.
+Now run ls -a , this command will also list any hidden files and folders. You should now also see your .super_secret_directory
+Check your current working directory, you should still be in the cli_practice directory.
+Use the following command to create 2 files at the same time, 				touch visible.txt .secret.txt you should “see” the visible.txt file in the Finder/Explorer folder but you won’t see the .secret.txt file. If you run the ls -a command in the command line you will see the hidden file there.
+Now let's move each file to their respective directories. Use the mv command to move the visible.txt file to the super_visible_directory. Then move the .secret.txt file to the .super_secret_directory .
+If you run ls -a while in the cli_practice directory you should see no output in the command line. This means you moved the files out of this directory. Good job!
+Now move into your .super_secret_directory
+Check the current directory and make sure you moved correctly
+List out all of the contents of the directory. Make sure to use the extra option to see hidden files and folders.
+While in the .super_secret_directory list out the contents of the super_visible_directory without moving to that directory.
+Now, in one command move to the super_visible_directory
+Check your current directory and make sure you are now in super_visible_directory and not still in the .super_secret_directory
+Use cd command to return to your HOME path.
+Now use the cd command to get into the super_visible_directory in one command. You will have to make sure to chain your path correctly all the way from your HOME path.
